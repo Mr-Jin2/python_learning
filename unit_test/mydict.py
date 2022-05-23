@@ -23,6 +23,9 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
+class FishTank:
+    def 
+
 if __name__ == '__main__':
     d = Dict(3,4,name='jyz',gender='male')
     print(d.id, d.name, d['gender'])

@@ -1,3 +1,3 @@
-# this is a dev branch
+# this is a master branch
 def git_test():
-    print('I am dev branch')
+    print('I am master branch')

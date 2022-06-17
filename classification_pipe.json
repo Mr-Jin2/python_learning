@@ -1,0 +1,33 @@
+
+{
+    "pipeline_name": "classification",
+    "group": [
+        {
+            "group_name": "sync_anno",
+            "input_stream": ["PATH:default_config_path"],
+            "output_stream": ["PATH:sync_anno_path"],
+            "operations": [
+                {
+                    "operation_name": "ClassificationDataSyncAnno",
+                    "input_stream": ["PATH:default_config_path"],
+                    "output_stream": ["PATH:sync_anno_path"]
+                }
+            ]
+        },
+        {
+            "group_name": "data_analysis",
+            "operations": [
+                {
+                    "operation_name": "ClassificationConvertAnnInfo",
+                    "input_stream": ["PATH:input1", "DICT:input2"],
+                    "output_stream": ["PATH:ouput1", "DICT:output2"]
+                },
+                {
+                    "operation_name": "ClassficationDataAnalysis",
+                    "input_stream": ["PATH:output1"],
+                    "output_stream": ["PATH:"]
+                }
+            ]
+        }
+    ]
+}

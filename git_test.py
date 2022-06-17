@@ -1,3 +1,6 @@
-# this is a master branch
+# this is a merage branch
 def git_test():
-    print('I am master branch')
+    print('I am merage branch')
+
+def git_test2():
+    print('I am merage branch')
